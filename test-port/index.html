@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio | Abdiel Lozano | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <!-------------- Header -------------->
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="img/logo-a.l.png" alt="logo">
+        <h2 class="alias">abdiellozano</h2>
+      </a>
+      <nav class="menu">
+        <div>
+          <a href="#inicio">Inicio</a>
+          <a href="#acerca">Acerca</a>
+          <a href="#cv">Currículum</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+      <div class="icons">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>translate</title>
+            <path
+              d="M12.87,15.07L10.33,12.56L10.36,12.53C12.1,10.59 13.34,8.36 14.07,6H17V4H10V2H8V4H1V6H12.17C11.5,7.92 10.44,9.75 9,11.35C8.07,10.32 7.3,9.19 6.69,8H4.69C5.42,9.63 6.42,11.17 7.67,12.56L2.58,17.58L4,19L9,14L12.11,17.11L12.87,15.07M18.5,10H16.5L12,22H14L15.12,19H19.87L21,22H23L18.5,10M15.88,17L17.5,12.67L19.12,17H15.88Z" />
+          </svg>
+          <span>EN</span>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars"
+            viewBox="0 0 16 16">
+            <path
+              d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+            <path
+              d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+          </svg>
+        </button>
+        <button class="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+          </svg>
+          <svg class="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+              d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-------------- Home -------------->
+    <section id="inicio" class="home st-custom-1">
+      <div class="container">
+        <article class="home-content">
+          <h4 class="text-center mb-40">Bienvenid@ a mi sitio</h4>
+          <h1 class="text-center title-border mb-custom-16-40">Hola! 👋🏻 Soy <br><span class="name">Abdiel
+              Lozano</span>
+          </h1>
+          <div class="home-content-1">
+            <aside class="home-content-first text-center">
+              <img src="img/alozano.jpg" alt="alozano">
+              <h2>
+                <em>Desarrollador
+                  Web</em>
+              </h2>
+              <h3>
+                <em>Frontend</em>
+              </h3>
+            </aside>
+            <div class="home-content-2">
+              <aside class="home-content-second text-center text-lg-left">
+                <p>
+                  +1 año de experiencia. <strong>Desarrollador Web de Guatemala, Guatemala <small>GT</small>.</strong>
+                  Especializado
+                  en la
+                  creación
+                  y desarrollo de
+                  interfaces intuitivas, interactivas y visualmente atractivas que brinden una experiencia de usuario
+                  excepcional.
+                </p>
+              </aside>
+              <!-- <aside class="home-content-third text-center text-lg-left mb-32">
+                <span class="typed"></span>
+                <div id="typed-texts">
+                  <span>Desarrollador Web</span>
+                  <span>Desarrollador Frontend</span>
+                  <span>Diseño UI/UX</span>
+                  <span>Construyendo Experiencias Digitales Excepcionales</span>
+                </div>
+              </aside> -->
+              <div class="home-content-3">
+                <aside class="home-cv">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z" />
+                    </svg>
+                    <span>Ver CV</span>
+                  </a>
+                </aside>
+                <aside class="home-icons">
+                  <a href="" class="home-icon-contact">
+                    <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+                      <path d="M3 6l9 6l9 -6"></path>
+                      <path d="M15 18h6"></path>
+                      <path d="M18 15l3 3l-3 3"></path>
+                    </svg>
+                  </a>
+                  <a href="" class="home-icon-linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                  </a>
+                  <a href="" class="home-icon-github">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                  </a>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-------------- About -------------->
+    <section id="acerca" class="st-custom-2">
+      <div class="container">
+        <h2 class="text-center title-border mb-custom-16-40">Sobre Mi</h2>
+        <article class="about-content">
+          <div class="about-content-1">
+            <aside class="about-content-first">
+              <div>
+                <img src="img/alozano.jpg" alt="alozano">
+                <span class="animation-available"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-circle-fill" viewBox="0 0 16 16">
+                  <circle cx="8" cy="8" r="8" />
+                </svg>
+              </div>
+              <a href="">
+                <h5>Disponible para trabajar</h5>
+              </a>
+            </aside>
+            <p>
+              Mi pasión por la programación se despertó a finales del año 2022, cuando decidí sumergirme en el
+              apasionante
+              mundo del
+              desarrollo web. Desde ese entonces he dedicado mi tiempo y esfuerzo a perfeccionar mis habilidades en el
+              arte
+              de crear
+              experiencias visuales y funcionales para los usuarios a través del código.
+            </p>
+            <p>Ayudo a diseñadores, emprendedores y empresas a dar vida a sus ideas. Además, he adquirido experiencia
+              realizando
+              proyectos personales y trabajando como freelance en los cuales he empleado las tecnologías que manejo.
+            </p>
+          </div>
+          <div class="about-content-2">
+            <p>
+              Estoy constantemente actualizando mis conocimientos y explorando nuevas tecnologías para seguir creciendo
+              profesionalmente. Mi objetivo es aceptar desafíos continuos y contribuir a proyectos interesantes que
+              impulsen
+              el
+              desarrollo tecnológico.
+            </p>
+            <p>
+              Visita mi portafolio de proyectos, siempre estoy abierto a nuevas oportunidades y colaboraciones, así que
+              no
+              dudes en
+              contactarme, será un gusto poder ayudarte en el crecimiento de tu emprendimiento o negocio e impulsar tu
+              presencia en
+              internet.
+            </p>
+          </div>
+        </article>
+        <h3 class="mb-16">Mis Habilidades</h3>
+        <article class="about-skills">
+          <aside class="about-skills-1 mb-32 mb-lg-0">
+            <h4 class="text-center mb-8">Frontend</h4>
+            <ul>
+              <li>
+                <img src="img/html-5.svg" alt="logo-html">
+                <h5>HTML</h5>
+              </li>
+              <li>
+                <img src="img/css-3.svg" alt="logo-css">
+                <h5>CSS</h5>
+              </li>
+              <li>
+                <img src="img/javascript.svg" alt="logo-javascript">
+                <h5>JavaScript</h5>
+              </li>
+            </ul>
+            <h4 class="text-center mt-24 mb-8">Framework / Librería</h4>
+            <ul>
+              <li>
+                <img src="img/reactjs.svg" alt="logo-reactjs">
+                <h5>React</h5>
+              </li>
+              <li>
+                <img src="img/bootstrap.svg" alt="logo-bootstrap">
+                <h5>Bootstrap</h5>
+              </li>
+              <li>
+                <img src="img/tailwind.svg" alt="logo-tailwind">
+                <h5>Tailwind</h5>
+              </li>
+            </ul>
+          </aside>
+          <aside class="about-skills-2 mb-32 mb-md-0">
+            <h4 class="text-center mb-8">Diseño Web (UI / UX)</h4>
+            <ul>
+              <li>
+                <img src="img/figma.svg" alt="logo-figma">
+                <h5>Figma</h5>
+              </li>
+            </ul>
+          </aside>
+          <aside class="about-skills-3 mb-32 mb-md-0">
+            <h4 class="text-center mb-8">Base de Datos</h4>
+            <ul>
+              <li>
+                <img src="img/mysql.svg" alt="logo-mysql">
+                <h5>MySQL</h5>
+              </li>
+            </ul>
+          </aside>
+          <aside class="about-skills-4 mb-md-0">
+            <h4 class="text-center mb-8">Herramientas</h4>
+            <ul>
+              <li>
+                <img src="img/git.svg" alt="logo-git">
+                <h5>Git</h5>
+              </li>
+              <li>
+                <img src="img/github.svg" alt="logo-github">
+                <h5>GitHub</h5>
+              </li>
+            </ul>
+          </aside>
+        </article>
+      </div>
+    </section>
+    <!-------------- Resume -------------->
+    <section id="cv" class="resume st-custom-2">
+      <div class="container">
+        <h2 class="text-center title-border mb-custom-16-40">CV</h2>
+        <article class="resume-content">
+          <aside class="resume-content-1">
+            <h3 class="ml-8">
+              <span class="style-icon-1">
+                <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M22.371,4.034A14.393,14.393,0,0,0,12,3.892a14.393,14.393,0,0,0-10.371.142A1,1,0,0,0,1,4.963V20a1,1,0,0,0,1.371.929,12.4,12.4,0,0,1,9.258,0,1.018,1.018,0,0,0,.348.066c.008,0,.015,0,.023,0s.015,0,.023,0a1.018,1.018,0,0,0,.348-.066,12.4,12.4,0,0,1,9.258,0,1,1,0,0,0,.932-.1A1,1,0,0,0,23,20V4.963A1,1,0,0,0,22.371,4.034ZM11,18.609A14.284,14.284,0,0,0,3,18.6V5.659a12.385,12.385,0,0,1,8,.013ZM21,18.6a14.375,14.375,0,0,0-8,0V5.672a12.385,12.385,0,0,1,8-.013Z">
+                    </path>
+                  </g>
+                </svg>
+              </span>
+              <span>Educación</span>
+            </h3>
+            <ol class="resume-style-content pl-28 mb-32">
+              <li>
+                <h4 class="mb-8">INGENIERÍA EN SISTEMAS</h4>
+                <h5 class="mb-8 style-square-1"><time datatime="2017-02-01">2017 </time>- Actualidad</h5>
+                <h5>Universidad Mariano Gálvez de Guatemala</h5>
+              </li>
+            </ol>
+            <h3 class="ml-8">
+              <span class="style-icon-1">
+                <svg fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 490.652 490.652" xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M456.607,9.904H34.04C15.269,9.904,0,25.17,0,43.945V310.17c0,18.77,15.269,34.039,34.04,34.039h260.642 c-4.043-10.35-6.534-21.737-7.159-33.742L33.549,310.17L34.04,43.452l423.063,0.493V310.17c0,0.279-0.23,0.492-0.495,0.492 l-15.251-0.019c-0.637,11.942-3.111,23.263-7.138,33.565h22.389c18.777,0,34.045-15.27,34.045-34.039V43.945 C490.652,25.17,475.385,9.904,456.607,9.904z">
+                      </path>
+                      <path
+                        d="M364.447,381.02c33.354,0,60.386-34.152,60.386-76.289c0-42.131-27.031-76.284-60.386-76.284 c-33.35,0-60.38,34.153-60.38,76.284C304.067,346.868,331.098,381.02,364.447,381.02z">
+                      </path>
+                      <path
+                        d="M81.087,118.345h149.561c9.273,0,16.776-7.499,16.776-16.772c0-9.271-7.504-16.775-16.776-16.775H81.087 c-9.271,0-16.771,7.504-16.771,16.775C64.316,110.846,71.815,118.345,81.087,118.345z">
+                      </path>
+                      <path
+                        d="M415.167,177.061c0-9.273-7.505-16.779-16.776-16.779H81.087c-9.271,0-16.771,7.506-16.771,16.779 c0,9.271,7.499,16.77,16.771,16.77h317.304C407.662,193.831,415.167,186.333,415.167,177.061z">
+                      </path>
+                      <path
+                        d="M81.087,235.768c-9.271,0-16.771,7.504-16.771,16.771c0,9.273,7.499,16.777,16.771,16.777h149.561 c9.273,0,16.776-7.504,16.776-16.777c0-9.268-7.504-16.771-16.776-16.771H81.087z">
+                      </path>
+                      <path
+                        d="M415.425,374.452c-0.065,0.082-23.295,26.869-55.728,23.081l40.331,81.577c0.491,1.012,1.526,1.639,2.637,1.639 c0.069,0,0.134,0,0.215,0c1.182-0.096,2.194-0.883,2.571-2.031l10.174-31.234c0.242-0.74,0.787-1.367,1.488-1.728 c0.409-0.194,0.867-0.29,1.294-0.29c0.328,0,0.657,0.047,0.986,0.16l30.977,10.88c0.324,0.112,0.651,0.163,0.98,0.163 c0.836,0,1.623-0.348,2.195-0.982c0.803-0.9,0.964-2.18,0.441-3.244L415.425,374.452z">
+                      </path>
+                      <path
+                        d="M313.653,374.598c-0.049-0.047-0.118-0.096-0.185-0.146l-38.561,77.973c-0.522,1.082-0.355,2.361,0.448,3.262 c0.571,0.635,1.373,0.982,2.21,0.982c0.329,0,0.651-0.051,0.964-0.163l30.978-10.88c0.328-0.113,0.658-0.16,0.982-0.16 c0.442,0,0.884,0.096,1.294,0.29c0.706,0.36,1.245,0.987,1.493,1.741l10.173,31.221c0.378,1.133,1.391,1.936,2.572,2.014 c0.064,0,0.145,0,0.21,0c1.116,0,2.145-0.625,2.642-1.621l26.206-53.01l-16.755-33.893 C338.258,392.174,323.652,386.324,313.653,374.598z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+              <span>Cursos</span>
+            </h3>
+            <ol class="resume-style-content pl-28 mb-32">
+              <li>
+                <h4 class="mb-8">DIPLOMADO EN REDES CISCO (CCNA)</h4>
+                <h5 class="mb-8 style-square-1"><time datatime="2021-06">2021 </time>- <time
+                    datatime="2022-03">2022</time></h5>
+                <h5>EDUTEK</h5>
+                <ul class="resume-content-first mt-16">
+                  <li>CCNA 1</li>
+                  <li>CCNA 2</li>
+                  <li>CCNA 3</li>
+                </ul>
+              </li>
+            </ol>
+          </aside>
+          <aside class="resume-content-2">
+            <h3 class="ml-8">
+              <span class="style-icon-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1);">
+                  <path
+                    d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM8 8h12v3H4V8h4zM4 19v-6h6v2h4v-2h6l.001 6H4z">
+                  </path>
+                </svg>
+              </span>
+              <span>Experiencia Profesional</span>
+            </h3>
+            <ol class="resume-style-content pl-28 mb-0">
+              <li class="pb-24">
+                <h4 class="mb-8">DESARROLLADOR WEB</h4>
+                <h5 class="mb-8 style-square-1">Actualidad</h5>
+                <h5><em>Freelance</em></h5>
+              </li>
+              <li class="pb-24">
+                <h4 class="mb-8">DESARROLLADOR WEB <em>(Freelance)</em></h4>
+                <h5 class="mb-8 style-square-1"><time datatime="2023-10">2023</time></h5>
+                <h5><em>Barbería "Rockstar Barber Shop"</em></h5>
+                <ul class="resume-content-first mt-16">
+                  <li>
+                    <div>
+                      <div class="mb-4">
+                        Diseño, Desarrollo y SEO del sitio web Rockstar Barber Shop.
+                      </div>
+                      <div class="resume-view-web">
+                        <a href="">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-link" viewBox="0 0 16 16">
+                            <path
+                              d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                            <path
+                              d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
+                          </svg>
+                          <h5>Ver Sitio Web</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4 class="mb-8">PRÁCTICA SUPERVISADA</h4>
+                <h5 class="mb-8 style-square-1"><time datatime="2017-09">09/2017 </time>-
+                  <time datatime="2017-10">10/2017</time>
+                </h5>
+                <h5><em>GRUPO ITM</em></h5>
+                <ul class="resume-content-first mt-16">
+                  <li>
+                    <div>
+                      <div class="mb-4">
+                        Ayudante general en el área de contabilidad.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </aside>
+        </article>
+      </div>
+    </section>
+    <!-------------- Portfolio -------------->
+    <section id="portafolio" class="portfolio st-custom-2">
+      <div class="container">
+        <h2 class="text-center">Proyectos</h2>
+        <article class="portfolio-content">
+          <div class="portfolio-card">
+            <aside class="portfolio-card-img">
+              <img src="img/project-1.png" alt="">
+            </aside>
+            <aside class="portfolio-card-content">
+              <h3>Página Web Barbería</h3>
+              <p>Una solución integral diseñada para simplificar y optimizar todas las operaciones relacionadas con la
+                gestión de
+                propiedades.</p>
+              <div>
+                <h4>Tecnologías</h4>
+                <div>
+                  <span><img src="img/html-5.svg" alt="html"></span>
+                  <span><img src="img/css-3.svg" alt="css"></span>
+                  <span><img src="img/javascript.svg" alt="javascript"></span>
+                </div>
+              </div>
+            </aside>
+            <hr>
+            <aside class="portfolio-card-links">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-link-45deg" viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg>
+                <span>Ver</span>
+              </a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+                <span>Código</span>
+              </a>
+            </aside>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
