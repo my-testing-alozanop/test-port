@@ -268,8 +268,12 @@ p {
 }
 
 .box-shadow-1 {
-  box-shadow: var(--shadow-1, 0 0 #0000), var(--shadow-2), 0 0 #0000,
-    var(--shadow);
+  box-shadow: var(--shadow-1, 0 0 --shadow-color), var(--shadow-2),
+    0 0 var(--shadow-color), var(--shadow);
+}
+
+.box-shadow-2 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .container {
@@ -284,6 +288,10 @@ p {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.p4-custom-16-24 {
+  padding: clamp(1rem, 0.7273rem + 1.3636vi, 1.75rem);
 }
 
 .pt-8 {
@@ -525,8 +533,8 @@ p {
 
 .about-skills > aside {
   padding: 1rem;
-  width: 16rem;
-  min-width: 16rem;
+  width: 17rem;
+  min-width: 17rem;
   border: 2px solid var(--border-color);
   border-radius: 0.5rem;
 }
@@ -560,33 +568,68 @@ p {
   height: 40px;
 }
 
+.about-service-cards svg {
+  width: auto;
+  height: 2.5rem;
+  stroke: none;
+}
+
+.about-service-card {
+  /* padding: 1rem; */
+  width: 17rem;
+  min-width: 17rem;
+  /*  border: 2px solid var(--border-color);
+  border-radius: 0.5rem; */
+}
+
+.about-service-card p {
+  margin-bottom: 0;
+}
+
+.about-service-card > aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-cards svg {
   width: auto;
   height: 1.5rem;
   stroke: none;
 }
 
-.contact-card-1,
-.contact-card-2 {
-  padding: 0.5rem;
-}
-
-.contact-card-1 > div,
-.contact-card-2 > div {
+.contact-card {
   display: flex;
   gap: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-.contact-address span:last-child,
-.contact-email span:last-child,
-.contact-phone span:last-child,
-.contact-website span:last-child,
-.contact-github span:last-child,
-.contact-linkedin span:last-child {
+.contact-card:hover {
+  padding-left: 0.5rem;
+  opacity: 1;
+}
+
+.contact-card:hover .contact-data {
+  text-decoration: underline;
+  color: var(--first-color);
+}
+
+.contact-card span:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 0.25rem;
+}
+
+/* todo footer */
+.footer {
+  margin-bottom: var(--header-height);
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--third-color);
 }
 
 .header {
@@ -715,11 +758,8 @@ p {
   height: 1.5rem;
 }
 
-.home-icon-contact svg {
-  fill: none;
-}
-
 .home-cv svg,
+.home-icon-contact svg,
 .home-icon-linkedin svg,
 .home-icon-github svg {
   stroke: none;
@@ -932,6 +972,16 @@ p {
     color: var(--text-color);
   }
 
+  .contact-cards {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+  }
+
+  .footer {
+    margin-bottom: 0;
+  }
+
   .portfolio-content {
     display: grid;
     grid-template-columns: repeat(2, 48%);
@@ -957,6 +1007,15 @@ p {
 
   .about-content-2 {
     align-self: center;
+  }
+
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
   }
 
   .header {
