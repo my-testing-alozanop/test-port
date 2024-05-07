@@ -35,3 +35,11 @@
     contentType: "html", // 'html' o 'null' para texto sin formato
   });
 })();
+
+/* ********** Year ********** */
+((d) => {
+  const $year = d.getElementById("year");
+  let yearData = new Date().getFullYear();
+
+  $year.innerHTML = yearData;
+})(document);
