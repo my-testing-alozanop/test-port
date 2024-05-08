@@ -13,6 +13,7 @@
   --color-white: #fff;
   --color-blue: #0d5981;
   --color-blue-1: #196a92;
+  --color-available: #4fec17;
 
   --color-light-bg: #fcfcfc;
   --color-light-bg-1: #f9f9ff;
@@ -28,12 +29,6 @@
     var(--first-color),
     var(--third-color)
   );
-
-  /*  --test: #039be5;
-  --test: rgba(3, 155, 229, 0.1); */
-
-  --bg-color-1: #ebecf0;
-  --btn-available: #4fec17;
   --shadow-color: #0000;
   --shadow: 0 10px 15px -3px var(--color-light-border-1),
     0 4px 6px -4px var(--color-light-border-1);
@@ -570,8 +565,8 @@ p {
   right: 4%;
   width: 1.125rem;
   height: 1.125rem;
-  fill: var(--btn-available);
-  stroke: var(--btn-available);
+  fill: var(--color-available);
+  stroke: var(--color-available);
   border: 2px solid var(--color-light-bg);
   border-radius: 50%;
 }
@@ -636,6 +631,7 @@ p {
 .about-service-card {
   padding: 1rem;
   width: 17rem;
+  height: 254px;
   min-width: 17rem;
 }
 
@@ -1002,7 +998,7 @@ p {
 }
 
 .resume-content-first li {
-  list-style: none;
+  list-style: square;
 }
 
 .resume-view-web h5 {
