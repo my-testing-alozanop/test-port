@@ -630,13 +630,13 @@ p {
 
 .about-service-card {
   padding: 1rem;
-  width: 17rem;
-  height: 254px;
-  min-width: 17rem;
+  width: 16.5rem;
+  min-width: 16.5rem;
 }
 
 .about-service-card p {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .about-service-card > aside {
@@ -729,7 +729,7 @@ p {
 
 .home-content-second p {
   margin: 0;
-  font-size: var(--step-18-19);
+  font-size: var(--step-18-20);
   opacity: 0.8;
 }
 
