@@ -1,44 +1,4 @@
-/* ********** Custom Properties ********** */
-:root {
-  --first-color: #039be5;
-  --first-color-1: #29b6f6;
-  --first-color-2: #0f6890;
-  --first-alpha-color: #e1f5fe;
-  --second-color: #3f7b9a;
-  --third-color: #00acc1;
-  --third-alpha-color: #b2ebf2;
-  --third-alpha-color-1: #e0f7fa;
-  --quarter-color: #e7762e;
-  --fifth-color: #0f172a;
-  --color-white: #fff;
-  --color-blue: #0d5981;
-  --color-blue-1: #196a92;
-  --color-available: #4fec17;
-
-  --color-light-bg: #fcfcfc;
-  --color-light-bg-1: #f9f9ff;
-  --color-light-text: #222;
-  --color-light-text-1: #404756;
-  --color-light-contrast: #eee;
-  --color-light-border: #d1d5db;
-  --color-light-border-1: #0000001a;
-  --color-light-link: #08c;
-
-  --gradient-primary: linear-gradient(
-    45deg,
-    var(--first-color),
-    var(--third-color)
-  );
-  --shadow-color: #0000;
-  --shadow: 0 10px 15px -3px var(--color-light-border-1),
-    0 4px 6px -4px var(--color-light-border-1);
-  --shadow-1: 0 0 var(--shadow-color);
-  --shadow-2: 0 0 var(--shadow-color);
-  --font: "Raleway", sans-serif;
-  --max-width: 1200px;
-  --header-height: 4rem;
-}
-
+/* ********** Fluid Design ********** */
 :root {
   /* 32 - 40 px */
   --step-1-32-40: clamp(2rem, 1.8182rem + 0.9091vi, 2.5rem);
@@ -92,6 +52,7 @@
   --step-6-11p2-13p6: clamp(0.7rem, 0.6455rem + 0.2727vi, 0.85rem);
 }
 
+/* ********** Fluid Design Space ********** */
 :root {
   --space-64-65: clamp(4rem, 3.9773rem + 0.1136vi, 4.0625rem);
   --space-32-65: clamp(2rem, 1.25rem + 3.75vi, 4.0625rem);
@@ -100,6 +61,108 @@
   --space-20-32: clamp(1.25rem, 0.9773rem + 1.3636vi, 2rem);
   --space-16-32: clamp(1rem, 0.6364rem + 1.8182vi, 2rem);
   --space-16-24: clamp(1rem, 0.7273rem + 1.3636vi, 1.75rem);
+  --space-8-16: clamp(0.5rem, 0.3182rem + 0.9091vi, 1rem);
+}
+
+/* ********** Custom Properties ********** */
+:root {
+  --first-color: #039be5;
+  --first-color-1: #29b6f6;
+  --first-color-2: #0f6890;
+  --first-alpha-color: #e1f5fe;
+  --second-color: #3f7b9a;
+  --third-color: #00acc1;
+  --third-alpha-color: #b2ebf2;
+  --third-alpha-color-1: #e0f7fa;
+  --quarter-color: #e7762e;
+  --fifth-color: #0f172a;
+  --color-white: #fff;
+  --color-blue: #0d5981;
+  --color-blue-1: #196a92;
+  --color-available: #4fec17;
+
+  --color-light-bg: #fcfcfc;
+  --color-light-bg-1: #f9f9ff;
+  --color-light-text: #222;
+  --color-light-text-1: #404756;
+  --color-light-contrast: #eee;
+  --color-light-border: #d1d5db;
+  --color-light-border-1: #0000001a;
+  --color-light-link: #08c;
+
+  --color-dark-bg: #202225;
+  --color-dark-bg-1: #19192c;
+  --color-dark-text: #fcfcfc;
+  --color-dark-text-1: #ebecf0;
+  --color-dark-contrast: #2f2f2f;
+  --color-dark-border: #34344e;
+  --color-dark-border-1: #0000001a; /*  */
+  --color-dark-link: #73cffa;
+
+  --font: "Raleway", sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+
+  --gradient-primary: linear-gradient(
+    45deg,
+    var(--first-color),
+    var(--third-color)
+  );
+
+  --shadow-color: #0000;
+  --shadow: 0 10px 15px -3px var(--color-light-border-1),
+    0 4px 6px -4px var(--color-light-border-1);
+  --shadow-1: 0 0 var(--shadow-color);
+  --shadow-2: 0 0 var(--shadow-color);
+}
+
+/* ********** User Prefers ********** */
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-bg: var(--color-dark-bg);
+    --color-bg-1: var(--color-dark-bg-1);
+    --color-text: var(--color-dark-text);
+    --color-text-1: var(--color-dark-text-1);
+    --color-contrast: var(--color-dark-contrast);
+    --color-border: var(--color-dark-border);
+    --color-border-1: var(--color-dark-border-1);
+    --color-link: var(--color-dark-link);
+  }
+}
+
+body.dark {
+  --color-bg: var(--color-dark-bg);
+  --color-bg-1: var(--color-dark-bg-1);
+  --color-text: var(--color-dark-text);
+  --color-text-1: var(--color-dark-text-1);
+  --color-contrast: var(--color-dark-contrast);
+  --color-border: var(--color-dark-border);
+  --color-border-1: var(--color-dark-border-1);
+  --color-link: var(--color-dark-link);
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --color-bg: var(--color-light-bg);
+    --color-bg-1: var(--color-light-bg-1);
+    --color-text: var(--color-light-text);
+    --color-text-1: var(--color-light-text-1);
+    --color-contrast: var(--color-light-contrast);
+    --color-border: var(--color-light-border);
+    --color-border-1: var(--color-light-border-1);
+    --color-link: var(--color-light-link);
+  }
+}
+
+body.light {
+  --color-bg: var(--color-light-bg);
+  --color-bg-1: var(--color-light-bg-1);
+  --color-text: var(--color-light-text);
+  --color-text-1: var(--color-light-text-1);
+  --color-contrast: var(--color-light-contrast);
+  --color-border: var(--color-light-border);
+  --color-border-1: var(--color-light-border-1);
+  --color-link: var(--color-light-link);
 }
 
 /* ********** Reset ********** */
@@ -490,6 +553,11 @@ p {
 }
 
 @media screen and (min-width: 64em) {
+  .full-lg-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+
   .text-lg-left {
     text-align: left;
   }
@@ -657,9 +725,10 @@ p {
   background-color: var(--color-light-bg);
 }
  */
+
 .contact-card {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-8-16);
   text-decoration: none;
   color: var(--color-light-text);
 }
@@ -916,6 +985,19 @@ p {
   font-weight: 800;
 }
 
+.portfolio-card-link-view a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--step-17-18);
+  text-decoration: none;
+}
+
+.portfolio-card-link-view a:hover {
+  text-decoration: underline;
+}
+
 .portfolio-icons > div {
   display: flex;
   align-items: center;
@@ -1046,6 +1128,10 @@ p {
     gap: 2.25rem;
   }
 
+  .portfolio-card-link-view {
+    margin-top: 5.625rem;
+  }
+
   .resume-content {
     margin-left: auto;
     margin-right: auto;
@@ -1063,6 +1149,11 @@ p {
 
   .about-content-2 {
     align-self: center;
+  }
+
+  .contact {
+    justify-content: center;
+    align-content: center;
   }
 
   .contact-cards {
@@ -1115,6 +1206,11 @@ p {
   .portfolio-content {
     grid-template-columns: repeat(3, 30%);
     /*  justify-content: space-between; */
+  }
+
+  .resume {
+    justify-content: center;
+    align-content: center;
   }
 
   .resume-content {
