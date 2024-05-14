@@ -71,20 +71,19 @@
   /* --first-color-2: #0f6890; */
   --first-color-2: #189ede;
   /* --first-alpha-color: #e1f5fe; */
-  --first-alpha-color: #b3e5fc;
+  --first-alpha-color: #81d4fa;
   /* --second-color: #3f7b9a; */
   --second-color: #5b95b4;
   --third-color: #00acc1;
   /* --third-alpha-color: #b2ebf2; */
   --third-alpha-color: #80deea;
   /* --third-alpha-color-1: #e0f7fa; */
-  --third-alpha-color-1: #b2ebf2;
   --quarter-color: #e7762e;
   --fifth-color: #0f172a;
   --color-white: #fff;
   /*  --color-blue: #0d5981; */
   --color-blue: #0a4768;
-  --color-blue-1: #155779;
+  /* --color-blue-1: #155779; */
   --color-available: #4fec17;
 
   --color-light-bg: #fcfcfc;
@@ -97,11 +96,13 @@
   --color-light-link: #08c;
 
   --color-dark-bg: #202225;
-  --color-dark-bg-1: #19192c;
+  /* --color-dark-bg-1: #19192c; */
+  --color-dark-bg-1: #19262c;
   --color-dark-text: #fcfcfc;
   --color-dark-text-1: #ebecf0;
   --color-dark-contrast: #2f2f2f;
-  --color-dark-border: #34344e;
+  /* --color-dark-border: #34344e; */
+  --color-dark-border: #34464e;
   --color-dark-border-1: #0000001a; /*  */
   --color-dark-link: #73cffa;
 
@@ -495,8 +496,7 @@ p {
 .style-square-1 {
   display: inline-block;
   padding: 6px 12px;
-  background-color: var(--third-alpha-color-1);
-  color: var(--color-blue);
+  background-color: var(--color-contrast);
   border-radius: 0.375rem;
 }
 
@@ -648,7 +648,7 @@ p {
 .about-content-first a {
   padding: 6px 12px;
   text-decoration: none;
-  color: var(--color-blue-1);
+  color: var(--color-blue);
   background-color: var(--first-alpha-color);
   border-radius: 0.5rem;
 }
@@ -997,6 +997,7 @@ p {
   gap: 0.3rem;
   font-size: var(--step-17-18);
   text-decoration: none;
+  border-radius: 0.5rem;
 }
 
 .portfolio-card-link-view a:hover {
