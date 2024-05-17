@@ -1,3 +1,46 @@
+/* ********** language toggle ********** */
+((d) => {
+  const $btnTranslate = d.querySelector(".btn-translate"),
+    $selectors = d.querySelectorAll("[data-section]");
+  let spanish = "ES",
+    english = "EN";
+
+  //console.log($selectors);
+
+  const getLanguage = async (languague) => {
+    let res = await fetch("assets/languages.json"),
+      json = await res.json();
+
+    let languageLowercase = languague.toLowerCase(),
+      dataLanguague = json.translation[languageLowercase];
+
+    //console.log(dataLanguague);
+
+    $selectors.forEach((el) => {
+      const section = el.dataset.section,
+        value = el.dataset.value;
+
+      //console.log(section, value);
+      //console.log(dataLanguague[section][value]);
+      el.innerHTML = dataLanguague[section][value];
+    });
+  };
+
+  $btnTranslate.addEventListener("click", (e) => {
+    let textLanguage = $btnTranslate.lastElementChild.textContent;
+
+    if (textLanguage === english) {
+      getLanguage(textLanguage);
+      //console.log(textLanguage);
+      $btnTranslate.lastElementChild.textContent = spanish;
+    } else {
+      getLanguage(textLanguage);
+      //console.log(textLanguage);
+      $btnTranslate.lastElementChild.textContent = english;
+    }
+  });
+})(document);
+
 /* ********** Menu ********** */
 ((d) => {
   const $btnMenu = d.querySelector(".menu-btn"),
@@ -18,8 +61,8 @@
   });
 })(document);
 
-/* ********** Year ********** */
-((d, w, ls) => {
+/* ********** theme-toggle ********** */
+/* ((d, w, ls) => {
   const $btn = d.querySelector(".btn-theme-toggle");
   let prefersDark = w.matchMedia("(prefers-color-scheme: dark)").matches,
     lightIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -61,7 +104,7 @@
   $btn.addEventListener("click", (e) =>
     ls.getItem("theme") === "dark" ? lightMode() : darkMode()
   );
-})(document, window, localStorage);
+})(document, window, localStorage); */
 
 /* ********** Typed ********** */
 (() => {

@@ -1,0 +1,23 @@
+{
+  "translation": {
+    "es": {
+      "home": {
+        "first-title": "Bienvenid@ a mi sitio",
+        "title": "Hola! 👋🏻 Soy <br>",
+        "subtitle": "Desarrollador Web",
+        "description": "+1 año de experiencia <strong>Desarrollador Web de Guatemala Guatemala <small>GT</small>.</strong> Especializado en la creación y desarrollo de interfaces intuitivas, interactivas y visualmente atractivas que brinden una experiencia de usuario excepcional.",
+        "typed-text-1": "Desarrollador Web",
+        "typed-text-2": "Desarrollador Frontend",
+        "typed-text-3": "Diseño UI/UX",
+        "typed-text-4": "Construyendo Experiencias Digitales Excepcionales",
+        "cv": "Ver CV"
+      }
+    },
+    "en": {
+      "home": {
+        "first-title": "Welcome to my site",
+        "description": "+1 year of experience. <strong>Web Developer from Guatemala, Guatemala <small>GT</small>.</strong> Specialized in the creation and development of intuitive, interactive and visually appealing interfaces that provide an exceptional user experience."
+      }
+    }
+  }
+}
