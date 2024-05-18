@@ -116,7 +116,7 @@
 }
 
 /* ********** User Prefers ********** */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   body {
     --color-bg: var(--color-dark-bg);
     --color-bg-1: var(--color-dark-bg-1);
@@ -170,7 +170,7 @@ body.light {
   --color-link: var(--color-light-link);
   --bx-shadow: var(--shadow-light);
   --bx-shadow-1: var(--shadow-light-1);
-} */
+}
 
 /* ********** Reset ********** */
 html {
@@ -529,7 +529,7 @@ p {
   text-align: center;
 }
 
-.text-gradient-primary {
+.title-gradient span {
   background-image: var(--gradient-primary);
   -ms-background-clip: text;
   -moz-background-clip: text;

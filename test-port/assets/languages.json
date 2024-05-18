@@ -1,22 +1,158 @@
 {
   "translation": {
     "es": {
+      "header": {
+        "title-1": "Inicio",
+        "title-2": "Acerca",
+        "title-3": "Currículum",
+        "title-4": "Portafolio",
+        "title-5": "Contacto"
+      },
       "home": {
         "first-title": "Bienvenid@ a mi sitio",
-        "title": "Hola! 👋🏻 Soy <br>",
+        "title": "Hola! 👋🏻 Soy<br><span>Abdiel Lozano</span>",
         "subtitle": "Desarrollador Web",
-        "description": "+1 año de experiencia <strong>Desarrollador Web de Guatemala Guatemala <small>GT</small>.</strong> Especializado en la creación y desarrollo de interfaces intuitivas, interactivas y visualmente atractivas que brinden una experiencia de usuario excepcional.",
-        "typed-text-1": "Desarrollador Web",
-        "typed-text-2": "Desarrollador Frontend",
-        "typed-text-3": "Diseño UI/UX",
-        "typed-text-4": "Construyendo Experiencias Digitales Excepcionales",
+        "subtitle-1": "Frontend",
+        "description": "+1 año de experiencia. <strong>Desarrollador Web de Guatemala Guatemala <small>GT</small>.</strong> Especializado en la creación y desarrollo de interfaces intuitivas, interactivas y visualmente atractivas que brinden una experiencia de usuario excepcional.",
         "cv": "Ver CV"
+      },
+      "about": {
+        "title": "Sobre Mi",
+        "subtitle": "Disponible para trabajar",
+        "p-1": "<strong>Desarrollador Frontend</strong>, disfruto llevar a cabo la maquetación e interactividad de interfaces, así como la optimización de carga en sitios y aplicaciones web.<br>Mi pasión por la programación se despertó a finales del año 2022, cuando decidí sumergirme en el apasionante mundo del desarrollo web. Desde ese entonces he dedicado mi tiempo y esfuerzo a perfeccionar mis habilidades en el arte de crear experiencias visuales y funcionales para los usuarios a través del código.",
+        "p-2": "Ayudo a diseñadores, emprendedores y empresas a dar vida a sus ideas. Además, he adquirido experiencia realizando proyectos personales y trabajando como freelance en los cuales he empleado las tecnologías que manejo.",
+        "p-3": "Estoy constantemente actualizando mis conocimientos y explorando nuevas tecnologías para seguir creciendo profesionalmente. Mi objetivo es aceptar desafíos continuos y contribuir a proyectos interesantes que impulsen el desarrollo tecnológico.",
+        "p-4": "Visita mi portafolio de proyectos, siempre estoy abierto a nuevas oportunidades y colaboraciones, así que no dudes en contactarme, será un gusto poder ayudarte en el crecimiento de tu emprendimiento o negocio e impulsar tu presencia digital en internet.",
+        "title-1": "Mis Habilidades",
+        "subtitle-1": "Frontend",
+        "subtitle-2": "Framework / Librería",
+        "subtitle-3": "Diseño Web (UI / UX)",
+        "subtitle-4": "Base de Datos",
+        "subtitle-5": "Herramientas",
+        "title-2": "Te Ofrezco",
+        "title-content-1": "Desarrollo Web",
+        "content-1": "Desarrollo sitios y aplicaciones web. Te ayudo a construir tu proyecto de principio a fin.",
+        "title-content-2": "Diseño Web",
+        "content-2": "Prototipo y maqueto tus diseños estáticos y los convierto en increíbles sitios y aplicaciones web responsivas, óptimas y accesibles.",
+        "title-content-3": "WPO",
+        "content-3": "<i>Web Performance Optimization</i>, hago que tus sitios y aplicaciones web mejoren su tiempo de carga y respuesta.",
+        "title-content-4": "SEO",
+        "content-4": "<i>Search Engine Optimization</i>, optimizo tus sitios y aplicaciones web para que mejoren su posición en los buscadores orgánicamente.",
+        "title-content-5": "Web Hosting",
+        "content-5": "¿No cuentas con dominio y alojamiento web para tu proyecto? No te preocupes de esas cosas técnicas me encargo yo.",
+        "title-content-6": "Mantenimiento Web",
+        "content-6": "Mantenimiento preventivo y correctivo de sitios y aplicaciones web."
+      },
+      "resume": {
+        "title-1": "Educación",
+        "subtitle-1": "INGENIERÍA EN SISTEMAS",
+        "year-1": "- Actualidad",
+        "site-1": "<em>Universidad Mariano Gálvez de Guatemala</em>",
+        "title-2": "Cursos",
+        "subtitle-2": "DIPLOMADO EN REDES CISCO (CCNA)",
+        "title-3": "Experiencia Profesional",
+        "subtitle-3": "DESARROLLADOR WEB",
+        "year-3": "Actualidad",
+        "subtitle-4": "DESARROLLADOR WEB <em>(Freelance)</em>",
+        "site-4": "<em>Barbería \"Rockstar Barber Shop\"</em>",
+        "content-4": "Diseño, Desarrollo y SEO de página web Rockstar Barber Shop.",
+        "view-4": "Ver",
+        "subtitle-5": "PRÁCTICA SUPERVISADA",
+        "content-5": "Ayudante general en el área administrativo."
+      },
+      "portfolio": {
+        "title": "Proyectos",
+        "subtitle-1": "Página Web Barbería",
+        "content-1": "Página Web para Barbería Rockstar Barber Shop, destaca los servicios ofrecidos por la barbería. Además, cuenta con un diseño moderno, atractivo y adaptable a todos los dispositivos y SEO.",
+        "technologies": "Tecnologías",
+        "view": "Ver",
+        "code": "Código",
+        "view-more-projects": "Ver Más Proyectos"
+      },
+      "contact": {
+        "title": "Contacto",
+        "location": "UBICACIÓN",
+        "location-description": "Guatemala, Guatemala",
+        "email": "CORREO",
+        "phone": "TELÉFONO",
+        "web-site": "Sitio Web"
       }
     },
     "en": {
+      "header": {
+        "title-1": "Home",
+        "title-2": "About",
+        "title-3": "Resume",
+        "title-4": "Portfolio",
+        "title-5": "Contact"
+      },
       "home": {
         "first-title": "Welcome to my site",
-        "description": "+1 year of experience. <strong>Web Developer from Guatemala, Guatemala <small>GT</small>.</strong> Specialized in the creation and development of intuitive, interactive and visually appealing interfaces that provide an exceptional user experience."
+        "title": "Hello! 👋🏻 I am<br><span>Abdiel Lozano</span>",
+        "subtitle": "Web Developer",
+        "subtitle-1": "Frontend",
+        "description": "+1 year of experience. <strong>Web Developer from Guatemala, Guatemala <small>GT</small>.</strong> Specialized in the creation and development of intuitive, interactive and visually appealing interfaces that provide an exceptional user experience.",
+        "cv": "View CV"
+      },
+      "about": {
+        "title": "About Me",
+        "subtitle": "Available for work",
+        "p-1": "<strong>Frontend Developer</strong>, I enjoy carrying out the layout and interactivity of interfaces, as well as load optimization on websites and web applications.<br>My passion for programming was awakened at the end of the year 2022, when I decided to dive into the exciting world of web development. Since then I have dedicated my time and effort to perfect my skills in the art of creating visual and functional experiences for users through code.",
+        "p-2": "I help designers, entrepreneurs and companies to bring their ideas to life. In addition, I have gained experience doing personal projects and working as a freelance in which I have used the technologies I handle.",
+        "p-3": "I am constantly updating my knowledge and exploring new technologies to keep growing professionally. My goal is to accept continuous challenges and contribute to interesting projects that drive technological development.",
+        "p-4": "Visit my portfolio of projects, I am always open to new opportunities and collaborations, so do not hesitate to contact me, it will be a pleasure to help you in the growth of your venture or business and boost your digital presence on the internet.",
+        "title-1": "My Skills",
+        "subtitle-1": "Frontend",
+        "subtitle-2": "Framework / Library",
+        "subtitle-3": "Web Design (UI / UX)",
+        "subtitle-4": "Database",
+        "subtitle-5": "Tools",
+        "title-2": "I Offer You",
+        "title-content-1": "Web Development",
+        "content-1": "I develop websites and web applications. I help you build your project from start to finish.",
+        "title-content-2": "Web Design",
+        "content-2": "I prototype and mockup your static designs and turn them into amazing responsive, optimal and accessible websites and web applications.",
+        "title-content-3": "WPO",
+        "content-3": "<i>Web Performance Optimization</i>, I make your websites and web applications improve their load and response time.",
+        "title-content-4": "SEO",
+        "content-4": "<i>Search Engine Optimization</i>, I optimize your websites and web applications to improve their position in search engines organically.",
+        "title-content-5": "Web Hosting",
+        "content-5": "Don't have a domain and web hosting for your project? Don't worry, I'll take care of those technical things.",
+        "title-content-6": "Web Maintenance",
+        "content-6": "Preventive and corrective maintenance of websites and web applications."
+      },
+      "resume": {
+        "title-1": "Education",
+        "subtitle-1": "SYSTEMS ENGINEERING",
+        "year-1": "- Actuality",
+        "site-1": "<em>Mariano Galvez University of Guatemala</em>",
+        "title-2": "Courses",
+        "subtitle-2": "CERTIFICATE IN CISCO NETWORKS (CCNA)",
+        "title-3": "Professional Experience",
+        "subtitle-3": "WEB DEVELOPER",
+        "year-3": "Actuality",
+        "subtitle-4": "WEB DEVELOPER <em>(Freelance)</em>",
+        "site-4": "<em>Barbershop \"Rockstar Barber Shop\"</em>",
+        "content-4": "Design, Development and SEO of Rockstar Barber Shop website.",
+        "view-4": "Preview",
+        "subtitle-5": "SUPERVISED PRACTICE",
+        "content-5": "General assistant in the administrative area."
+      },
+      "portfolio": {
+        "title": "Projects",
+        "subtitle-1": "Barbershop Website",
+        "content-1": "Website for Barber Shop Rockstar Barber Shop, highlights the services offered by the barbershop. It also has a modern design, attractive and adaptable to all devices and SEO.",
+        "technologies": "Technologies",
+        "view": "View",
+        "code": "Code",
+        "view-more-projects": "View More Projects"
+      },
+      "contact": {
+        "title": "Contact",
+        "location": "LOCATION",
+        "email": "EMAIL",
+        "phone": "TELEPHONE",
+        "web-site": "Web Site"
       }
     }
   }

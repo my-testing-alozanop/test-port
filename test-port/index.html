@@ -22,11 +22,11 @@
       </a>
       <nav class="menu">
         <div>
-          <a href="#inicio">Inicio</a>
-          <a href="#acerca">Acerca</a>
-          <a href="#cv">Currículum</a>
-          <a href="#portafolio">Portafolio</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#inicio" data-section="header" data-value="title-1">Inicio</a>
+          <a href="#acerca" data-section="header" data-value="title-2">Acerca</a>
+          <a href="#cv" data-section="header" data-value="title-3">Currículum</a>
+          <a href="#portafolio" data-section="header" data-value="title-4">Portafolio</a>
+          <a href="#contacto" data-section="header" data-value="title-5">Contacto</a>
         </div>
       </nav>
       <div class="icons">
@@ -58,19 +58,19 @@
       <div class="container">
         <article class="home-content">
           <h4 class="text-center mb-40" data-section="home" data-value="first-title">Bienvenid@ a mi sitio</h4>
-          <h1 class="text-center title-border mb-custom-24-40">Hola! 👋🏻 Soy <br><span
-              class="text-gradient-primary">Abdiel
-              Lozano</span>
+          <h1 class="title-gradient text-center title-border mb-custom-24-40" data-section="home" data-value="title">
+            Hola! 👋🏻 Soy<br>
+            <span>Abdiel Lozano</span>
           </h1>
           <div class="home-content-1">
             <aside class="home-content-first text-center mb-20">
               <img src="img/alozano.jpg" alt="alozano">
               <h2>
-                <em>Desarrollador
+                <em data-section="home" data-value="subtitle">Desarrollador
                   Web</em>
               </h2>
               <h3>
-                <em>Frontend</em>
+                <em data-section="home" data-value="subtitle-1">Frontend</em>
               </h3>
             </aside>
             <div class="home-content-2">
@@ -92,6 +92,10 @@
                   <span>Desarrollador Frontend</span>
                   <span>Diseño UI/UX</span>
                   <span>Construyendo Experiencias Digitales Excepcionales</span>
+                  <span>Web Developer</span>
+                  <span>Frontend Developer</span>
+                  <span>UI/UX Design</span>
+                  <span>Building Exceptional Digital Experiences</span>
                 </div>
               </aside>
               <div class="home-content-3">
@@ -102,7 +106,7 @@
                       <path fill-rule="evenodd"
                         d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z" />
                     </svg>
-                    <span>Ver CV</span>
+                    <span data-section="home" data-value="cv">Ver CV</span>
                   </a>
                 </aside>
                 <aside class="home-icons">
@@ -138,7 +142,7 @@
     <!-------------- About -------------->
     <section id="acerca" class="section-custom-2">
       <div class="container">
-        <h2 class="text-center title-border mb-custom-24-40">Sobre Mi</h2>
+        <h2 class="text-center title-border mb-custom-24-40" data-section="about" data-value="title">Sobre Mi</h2>
         <article class="about-content mb-24">
           <div class="about-content-1">
             <aside class="about-content-first mb-20">
@@ -150,16 +154,16 @@
                 </svg>
               </div>
               <a href="https://www.linkedin.com/in/abdiellozano" target="_blank" rel="noopener">
-                <h5>Disponible para trabajar</h5>
+                <h5 data-section="about" data-value="subtitle">Disponible para trabajar</h5>
               </a>
             </aside>
-            <p>
+            <p data-section="about" data-value="p-1">
               <strong>Desarrollador Frontend</strong>, disfruto llevar a cabo la maquetación e interactividad de
               interfaces, así
               como la
               optimización de carga en sitios y
-              aplicaciones web.<br>
-              Mi pasión por la programación se despertó a finales del año 2022, cuando decidí sumergirme en el
+              aplicaciones web.<br>Mi pasión por la programación se despertó a finales del año 2022, cuando decidí
+              sumergirme en el
               apasionante
               mundo del
               desarrollo web. Desde ese entonces he dedicado mi tiempo y esfuerzo a perfeccionar mis habilidades en el
@@ -167,21 +171,22 @@
               de crear
               experiencias visuales y funcionales para los usuarios a través del código.
             </p>
-            <p class="mb-lg-0">Ayudo a diseñadores, emprendedores y empresas a dar vida a sus ideas. Además, he
+            <p class="mb-lg-0" data-section="about" data-value="p-2">Ayudo a diseñadores, emprendedores y empresas a dar
+              vida a sus ideas. Además, he
               adquirido experiencia
               realizando
               proyectos personales y trabajando como freelance en los cuales he empleado las tecnologías que manejo.
             </p>
           </div>
           <div class="about-content-2">
-            <p>
+            <p data-section="about" data-value="p-3">
               Estoy constantemente actualizando mis conocimientos y explorando nuevas tecnologías para seguir creciendo
               profesionalmente. Mi objetivo es aceptar desafíos continuos y contribuir a proyectos interesantes que
               impulsen
               el
               desarrollo tecnológico.
             </p>
-            <p class="mb-0">
+            <p class="mb-0" data-section="about" data-value="p-4">
               Visita mi portafolio de proyectos, siempre estoy abierto a nuevas oportunidades y colaboraciones, así que
               no
               dudes en
@@ -191,10 +196,10 @@
             </p>
           </div>
         </article>
-        <h3 class="mb-20">Mis Habilidades</h3>
+        <h3 class="mb-20" data-section="about" data-value="title-1">Mis Habilidades</h3>
         <article class="about-skills scroll-x-container mb-24">
           <aside class="about-skills-1">
-            <h4 class="text-center mb-8">Frontend</h4>
+            <h4 class="text-center mb-8" data-section="about" data-value="subtitle-1">Frontend</h4>
             <ul>
               <li>
                 <img src="img/html-5.svg" alt="logo-html">
@@ -209,7 +214,7 @@
                 <h5>JavaScript</h5>
               </li>
             </ul>
-            <h4 class="text-center mt-24 mb-8">Framework / Librería</h4>
+            <h4 class="text-center mt-24 mb-8" data-section="about" data-value="subtitle-2">Framework / Librería</h4>
             <ul>
               <li>
                 <img src="img/reactjs.svg" alt="logo-reactjs">
@@ -226,7 +231,7 @@
             </ul>
           </aside>
           <aside class="about-skills-2">
-            <h4 class="text-center mb-8">Diseño Web (UI / UX)</h4>
+            <h4 class="text-center mb-8" data-section="about" data-value="subtitle-3">Diseño Web (UI / UX)</h4>
             <ul>
               <li>
                 <img src="img/figma.svg" alt="logo-figma">
@@ -235,7 +240,7 @@
             </ul>
           </aside>
           <aside class="about-skills-3">
-            <h4 class="text-center mb-8">Base de Datos</h4>
+            <h4 class="text-center mb-8" data-section="about" data-value="subtitle-4">Base de Datos</h4>
             <ul>
               <li>
                 <img src="img/mysql.svg" alt="logo-mysql">
@@ -244,7 +249,7 @@
             </ul>
           </aside>
           <aside class="about-skills-4">
-            <h4 class="text-center mb-8">Herramientas</h4>
+            <h4 class="text-center mb-8" data-section="about" data-value="subtitle-5">Herramientas</h4>
             <ul>
               <li>
                 <img src="img/git.svg" alt="logo-git">
@@ -257,7 +262,7 @@
             </ul>
           </aside>
         </article>
-        <h3 class="mb-20">Te Ofrezco</h3>
+        <h3 class="mb-20" data-section="about" data-value="title-2">Te Ofrezco</h3>
         <article class="about-service-cards scroll-x-container">
           <div class="about-service-card">
             <aside>
@@ -267,9 +272,9 @@
                 <path
                   d="M9.293 9.293L5.586 13 9.293 16.707 10.707 15.293 8.414 13 10.707 10.707zM14.707 9.293L13.293 10.707 15.586 13 13.293 15.293 14.707 16.707 18.414 13z" />
               </svg>
-              <h4>Desarrollo Web</h4>
+              <h4 data-section="about" data-value="title-content-1">Desarrollo Web</h4>
             </aside>
-            <p>
+            <p data-section="about" data-value="content-1">
               Desarrollo sitios y aplicaciones web. Te ayudo a construir tu proyecto de
               principio a
               fin.
@@ -281,9 +286,9 @@
                 <path
                   d="M20,3H7C5.897,3,5,3.897,5,5v2H4C2.897,7,2,7.897,2,9v10c0,1.103,0.897,2,2,2h6c1.103,0,2-0.897,2-2h8c1.103,0,2-0.897,2-2 V5C22,3.897,21.103,3,20,3z M6,9h4l-0.003,9H4V9H6z M12,17V9c0-1.103-0.897-2-2-2H7V5h11v12H12z" />
               </svg>
-              <h4>Diseño Web</h4>
+              <h4 data-section="about" data-value="title-content-2">Diseño Web</h4>
             </aside>
-            <p>
+            <p data-section="about" data-value="content-2">
               Prototipo y maqueto tus diseños estáticos y los convierto en increíbles sitios y aplicaciones web
               responsivas, óptimas y
               accesibles.
@@ -301,9 +306,9 @@
                 <circle cx="6.343" cy="6.344" r="2" />
                 <circle cx="17.657" cy="17.658" r="2" />
               </svg>
-              <h4>WPO</h4>
+              <h4 data-section="about" data-value="title-content-3">WPO</h4>
             </aside>
-            <p>
+            <p data-section="about" data-value="content-3">
               <i>Web Performance Optimization</i>, hago que tus sitios y aplicaciones web mejoren su tiempo de carga
               y
               respuesta.
@@ -334,9 +339,9 @@
                   </g>
                 </g>
               </svg>
-              <h4>SEO</h4>
+              <h4 data-section="about" data-value="title-content-4">SEO</h4>
             </aside>
-            <p>
+            <p data-section="about" data-value="content-4">
               <i>Search Engine Optimization</i>, optimizo tus sitios y aplicaciones web para que mejoren su posición
               en
               los buscadores
@@ -354,9 +359,9 @@
                   </path>
                 </g>
               </svg>
-              <h4>Web Hosting</h4>
+              <h4 data-section="about" data-value="title-content-5">Web Hosting</h4>
             </aside>
-            <p>
+            <p data-section="about" data-value="content-5">
               ¿No cuentas con dominio y alojamiento web para tu proyecto? No te preocupes de esas cosas técnicas me
               encargo yo.
             </p>
@@ -374,9 +379,9 @@
                   </path>
                 </g>
               </svg>
-              <h4>Mantenimiento Web</h4>
+              <h4 data-section="about" data-value="title-content-6">Mantenimiento Web</h4>
             </aside>
-            <p>
+            <p data-section="about" data-value="content-6">
               Mantenimiento preventivo y correctivo de sitios y aplicaciones web.
             </p>
           </div>
@@ -401,13 +406,14 @@
                   </g>
                 </svg>
               </span>
-              <span>Educación</span>
+              <span data-section="resume" data-value="title-1">Educación</span>
             </h3>
             <ol class="resume-style-content pl-28 mb-28">
               <li>
-                <h4 class="mb-8">INGENIERÍA EN SISTEMAS</h4>
-                <h5 class="mb-8 style-square-1"><time datatime="2017-02-01">2017 </time>- Actualidad</h5>
-                <h5><em>Universidad Mariano Gálvez de Guatemala</em></h5>
+                <h4 class="mb-8" data-section="resume" data-value="subtitle-1">INGENIERÍA EN SISTEMAS</h4>
+                <h5 class="mb-8 style-square-1"><time datatime="2017-02-01">2017 </time data-section="resume"
+                    data-value="year-1">- Actualidad</h5>
+                <h5 data-section="resume" data-value="site-1"><em>Universidad Mariano Gálvez de Guatemala</em></h5>
               </li>
             </ol>
             <h3 class="ml-8">
@@ -444,11 +450,11 @@
                   </g>
                 </svg>
               </span>
-              <span>Cursos</span>
+              <span data-section="resume" data-value="title-2">Cursos</span>
             </h3>
             <ol class="resume-style-content pl-28 mb-28 mb-lg-0">
               <li>
-                <h4 class="mb-8">DIPLOMADO EN REDES CISCO (CCNA)</h4>
+                <h4 class="mb-8" data-section="resume" data-value="subtitle-2">DIPLOMADO EN REDES CISCO (CCNA)</h4>
                 <h5 class="mb-8 style-square-1"><time datatime="2021-06">2021 </time>- <time
                     datatime="2022-03">2022</time></h5>
                 <h5><em>EDUTEK</em></h5>
@@ -469,22 +475,23 @@
                   </path>
                 </svg>
               </span>
-              <span>Experiencia Profesional</span>
+              <span data-section="resume" data-value="title-3">Experiencia Profesional</span>
             </h3>
             <ol class="resume-style-content pl-28 mb-0">
               <li class="pb-24">
-                <h4 class="mb-8">DESARROLLADOR WEB</h4>
-                <h5 class="mb-8 style-square-1">Actualidad</h5>
+                <h4 class="mb-8" data-section="resume" data-value="subtitle-3">DESARROLLADOR WEB</h4>
+                <h5 class="mb-8 style-square-1" data-section="resume" data-value="year-3">Actualidad</h5>
                 <h5><em>Freelance</em></h5>
               </li>
               <li class="pb-24">
-                <h4 class="mb-8">DESARROLLADOR WEB <em>(Freelance)</em></h4>
+                <h4 class="mb-8" data-section="resume" data-value="subtitle-4">DESARROLLADOR WEB <em>(Freelance)</em>
+                </h4>
                 <h5 class="mb-8 style-square-1"><time datatime="2023-10">2023</time></h5>
-                <h5><em>Barbería "Rockstar Barber Shop"</em></h5>
+                <h5 data-section="resume" data-value="site-4"><em>Barbería "Rockstar Barber Shop"</em></h5>
                 <ul class="resume-content-first mt-16">
                   <li>
                     <div>
-                      <div class="mb-4">
+                      <div class="mb-4" data-section="resume" data-value="content-4">
                         Diseño, Desarrollo y SEO de página web Rockstar Barber Shop.
                       </div>
                       <div class="resume-view-web">
@@ -496,7 +503,7 @@
                             <path
                               d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
                           </svg>
-                          <h5>Ver</h5>
+                          <h5 data-section="resume" data-value="view-4">Ver</h5>
                         </a>
                       </div>
                     </div>
@@ -504,7 +511,7 @@
                 </ul>
               </li>
               <li>
-                <h4 class="mb-8">PRÁCTICA SUPERVISADA</h4>
+                <h4 class="mb-8" data-section="resume" data-value="subtitle-5">PRÁCTICA SUPERVISADA</h4>
                 <h5 class="mb-8 style-square-1"><time datatime="2017-09">09/2017 </time>-
                   <time datatime="2017-10">10/2017</time>
                 </h5>
@@ -512,7 +519,7 @@
                 <ul class="resume-content-first mt-16">
                   <li>
                     <div>
-                      <div class="mb-4">
+                      <div class="mb-4" data-section="resume" data-value="content-5">
                         Ayudante general en el área administrativo.
                       </div>
                     </div>
@@ -527,7 +534,7 @@
     <!-------------- Portfolio -------------->
     <section id="portafolio" class="portfolio section-custom-2">
       <div class="container">
-        <h2 class="text-center title-border mb-custom-24-40">Proyectos</h2>
+        <h2 class="text-center title-border mb-custom-24-40" data-section="portfolio" data-value="title">Proyectos</h2>
         <article class="portfolio-content">
           <div class="portfolio-card mb-32 box-shadow-1 overflow-hidden mb-md-0">
             <aside class="portfolio-card-img">
@@ -535,12 +542,13 @@
             </aside>
             <div class="pt-8 pl-pr-16 pb-16">
               <aside class="portfolio-card-content">
-                <h3>Página Web Barbería</h3>
-                <p>Página Web para Barbería Rockstar Barber Shop, destaca los servicios ofrecidos por la barbería.
+                <h3 data-section="portfolio" data-value="subtitle-1">Página Web Barbería</h3>
+                <p data-section="portfolio" data-value="content-1">Página Web para Barbería Rockstar Barber Shop,
+                  destaca los servicios ofrecidos por la barbería.
                   Además, cuenta con un
                   diseño moderno, atractivo y adaptable a todos los dispositivos y SEO.</p>
                 <div class="portfolio-icons">
-                  <h4 class="mb-8">Tecnologías</h4>
+                  <h4 class="mb-8" data-section="portfolio" data-value="technologies">Tecnologías</h4>
                   <div>
                     <span><img src="img/html-5.svg" alt="html"></span>
                     <span><img src="img/css-3.svg" alt="css"></span>
@@ -558,7 +566,7 @@
                     <path
                       d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
                   </svg>
-                  <h5>Ver</h5>
+                  <h5 data-section="portfolio" data-value="view">Ver</h5>
                 </a>
                 <a href="https://github.com/alozanop11/rockstar-barber-shop.git" target="_blank" rel="noopener">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -566,7 +574,7 @@
                     <path
                       d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                   </svg>
-                  <h5>Código</h5>
+                  <h5 data-section="portfolio" data-value="code">Código</h5>
                 </a>
               </aside>
             </div>
@@ -741,7 +749,7 @@
           </div>
           <div class="portfolio-card-link-view">
             <a href="">
-              <span>Ver Más Proyectos</span>
+              <span data-section="portfolio" data-value="view-more-projects">Ver Más Proyectos</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -755,7 +763,7 @@
     <!-------------- Contact -------------->
     <section id="contacto" class="contact full-lg-screen section-custom-3">
       <div class="container">
-        <h2 class="text-center title-border mb-custom-24-40">Contacto</h2>
+        <h2 class="text-center title-border mb-custom-24-40" data-section="contact" data-value="title">Contacto</h2>
         <article class="contact-cards">
           <aside class="contact-cards-1 mb-32 box-shadow-2 mb-lg-0 p4-custom-1">
             <a href="#contacto" class="contact-card mb-32">
@@ -768,8 +776,9 @@
                 </svg>
               </span>
               <span>
-                <h4>UBICACIÓN</h4>
-                <address class="contact-data">Guatemala, Guatemala</address>
+                <h4 data-section="contact" data-value="location">UBICACIÓN</h4>
+                <address class="contact-data">Guatemala,
+                  Guatemala</address>
               </span>
             </a>
             <a href="mailto:golfran.lozano@gmail.com" class="contact-card mb-32">
@@ -781,7 +790,7 @@
                 </svg>
               </span>
               <span>
-                <h4>CORREO</h4>
+                <h4 data-section="contact" data-value="email">CORREO</h4>
                 <span class="contact-data">golfran.lozano@gmail.com</span>
               </span>
             </a>
@@ -795,7 +804,7 @@
                 </svg>
               </span>
               <span>
-                <h4>TELÉFONO</h4>
+                <h4 data-section="contact" data-value="phone">TELÉFONO</h4>
                 <span class="contact-data">(+502) 44840051</span>
               </span>
             </a>
@@ -814,7 +823,7 @@
                 </svg>
               </span>
               <span>
-                <h4>Sitio Web</h4>
+                <h4 data-section="contact" data-value="web-site">Sitio Web</h4>
                 <span class="contact-data">abdiellozano</span>
               </span>
             </a>
@@ -851,7 +860,7 @@
     <!-------------- Footer -------------->
     <footer class="footer">
       <small>
-        &copy;<span id="year"></span> Abdiel Lozano - Todos los Derechos Reservados <br> Sitio Diseñado
+        &copy;<span id="year"></span> Abdiel Lozano - Todos los Derechos Reservados <br>Sitio Diseñado
         por
         <a href="https://www.linkedin.com/in/abdiellozano" target="_blank" rel="noopener">@abdiellozano</a>
       </small>

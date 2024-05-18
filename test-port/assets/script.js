@@ -2,10 +2,9 @@
 ((d) => {
   const $btnTranslate = d.querySelector(".btn-translate"),
     $selectors = d.querySelectorAll("[data-section]");
+
   let spanish = "ES",
     english = "EN";
-
-  //console.log($selectors);
 
   const getLanguage = async (languague) => {
     let res = await fetch("assets/languages.json"),
@@ -31,11 +30,9 @@
 
     if (textLanguage === english) {
       getLanguage(textLanguage);
-      //console.log(textLanguage);
       $btnTranslate.lastElementChild.textContent = spanish;
     } else {
       getLanguage(textLanguage);
-      //console.log(textLanguage);
       $btnTranslate.lastElementChild.textContent = english;
     }
   });
@@ -62,7 +59,7 @@
 })(document);
 
 /* ********** theme-toggle ********** */
-/* ((d, w, ls) => {
+((d, w, ls) => {
   const $btn = d.querySelector(".btn-theme-toggle");
   let prefersDark = w.matchMedia("(prefers-color-scheme: dark)").matches,
     lightIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -104,7 +101,7 @@
   $btn.addEventListener("click", (e) =>
     ls.getItem("theme") === "dark" ? lightMode() : darkMode()
   );
-})(document, window, localStorage); */
+})(document, window, localStorage);
 
 /* ********** Typed ********** */
 (() => {
