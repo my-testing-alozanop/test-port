@@ -75,7 +75,7 @@
         "location-description": "Guatemala, Guatemala",
         "email": "CORREO",
         "phone": "TELÉFONO",
-        "web-site": "Sitio Web"
+        "web-site": "SITIO WEB"
       }
     },
     "en": {
@@ -152,7 +152,7 @@
         "location": "LOCATION",
         "email": "EMAIL",
         "phone": "TELEPHONE",
-        "web-site": "Web Site"
+        "web-site": "WEB SITE"
       }
     }
   }
