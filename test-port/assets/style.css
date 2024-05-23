@@ -12,6 +12,7 @@
   ); /* 21 - 25 px */
   /* 20 - 24 px */
   --step-3-20-24: clamp(1.25rem, 1.1591rem + 0.4545vi, 1.5rem);
+  --step-20-22: clamp(1.25rem, 1.2045rem + 0.2273vi, 1.375rem); /* 20 - 22 px */
   /* 16 - 20 px */
   --step-4-16-20: clamp(1rem, 0.9091rem + 0.4545vi, 1.25rem);
   --step-18-19: clamp(
@@ -694,7 +695,8 @@ p {
   transform: scale(1.1);
 }
 
-.about-skills img {
+.about-skills img,
+.about-skills svg {
   width: auto;
   height: 40px;
 }
@@ -1025,11 +1027,13 @@ p {
   gap: 0.5rem;
 }
 
+.portfolio-card-content h3 {
+  font-size: var(--step-20-22);
+}
+
 .portfolio-card-content p {
-  min-height: 156px;
   margin: 0.75rem 0;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .portfolio-card-content img {
@@ -1142,6 +1146,27 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 650px;
+  }
+
+  .portfolio-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-card > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .portfolio-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .portfolio-card-content p {
+    flex-grow: 1;
   }
 
   .portfolio-content {
